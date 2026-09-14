@@ -10,7 +10,7 @@ export default function Calculator() {
   
   function onClickHandler() {
     if (firstNumber == null || secondNumber == null || operator == null) return 
-    switch (operator) {
+    switch (operator.trim()) {
       case "+":
         setValue(firstNumber + secondNumber);
         break;
